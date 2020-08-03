@@ -1,0 +1,56 @@
+
+package calculadora;
+
+import java.util.Scanner;
+
+
+public class Calculadora {
+    
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int op; 
+        int cont = 1;
+        while (cont != 0){
+        System.out.println("\n1-Somar");
+        System.out.println("2-Subtrair");
+        System.out.println("3-Divisão");
+        System.out.println("4-Multiplicação");
+        System.out.println("5-Exponenciação");
+        System.out.println("0-Sair");
+
+        op = scan.nextInt();
+        
+        switch (op){
+        case 1:
+            Soma2 adic = new Soma2();
+            adic.add();
+            break;    
+        case 2:
+            Dim dim = new Dim();
+            dim.add();
+            break;
+        case 3:
+            Div div = new Div();
+            div.add();      
+            break;
+        case 4:
+            Mult mult = new Mult();
+            mult.add();      
+            break;
+        case 5:
+            Elev elev = new Elev();
+            elev.add();
+            break;
+        case 0:
+        System.exit(0);
+        default:     
+               System.out.println("Digite valor válido");
+               
+             }   
+            }
+           }
+         }
+    
+    
+
